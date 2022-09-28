@@ -1,5 +1,5 @@
 function verificaSeOChutePossuiUmValorValido(chute) {
-    const numero = parseInt(chute);
+    const numero += chute;
 
     if (chuteForInvalido(numero)) {
         if (chute.toUpperCase() === "GAME OVER") {
