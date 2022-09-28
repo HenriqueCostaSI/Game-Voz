@@ -3,7 +3,7 @@ const maiorValor = 1000;
 
 const numeroSecreto = getNumeroAleatorio();
 
-function getNumeroSecreto() {
+function getNumeroAleatorio() { 
 
     return parseInt(Math.random()* maiorValor + 1);
 }
