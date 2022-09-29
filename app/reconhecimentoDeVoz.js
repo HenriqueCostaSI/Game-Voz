@@ -9,6 +9,7 @@ recognition.start()
 recognition.addEventListener('result', onSpeak)
 
 function onSpeak(e) {
+    console.log(chute = e.results[0][0].transcript)
     chute = e.results[0][0].transcript
     exibeChuteNaTela(chute)
     verificaSeOChutePossuiUmValorValido(chute)
@@ -21,4 +22,4 @@ function exibeChuteNaTela(chute) {
      `
 }
 
-recognition.addEventListener('end', () => recognition.start())
+//recognition.addEventListener('end', () => recognition.start())
